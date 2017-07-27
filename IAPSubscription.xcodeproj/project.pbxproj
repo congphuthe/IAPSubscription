@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7ADB7D311F29D0690019099C /* IAPSubscription.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ADB7D2F1F29D0690019099C /* IAPSubscription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ADB7D3C1F29D0760019099C /* PaidSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB7D371F29D0760019099C /* PaidSubscription.swift */; };
+		7ADB7D3D1F29D0760019099C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB7D381F29D0760019099C /* Session.swift */; };
+		7ADB7D3E1F29D0760019099C /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB7D391F29D0760019099C /* Subscription.swift */; };
+		7ADB7D3F1F29D0760019099C /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB7D3A1F29D0760019099C /* SubscriptionService.swift */; };
+		7ADB7D401F29D0760019099C /* ReceiptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB7D3B1F29D0760019099C /* ReceiptService.swift */; };
+		7ADB7D421F29D2340019099C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB7D411F29D2340019099C /* AppConfig.swift */; };
+		7ADB7D441F29D2490019099C /* UserDefaults+IAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB7D431F29D2490019099C /* UserDefaults+IAP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7ADB7D2C1F29D0690019099C /* IAPSubscription.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IAPSubscription.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADB7D2F1F29D0690019099C /* IAPSubscription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAPSubscription.h; sourceTree = "<group>"; };
 		7ADB7D301F29D0690019099C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADB7D371F29D0760019099C /* PaidSubscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaidSubscription.swift; sourceTree = "<group>"; };
+		7ADB7D381F29D0760019099C /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		7ADB7D391F29D0760019099C /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		7ADB7D3A1F29D0760019099C /* SubscriptionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
+		7ADB7D3B1F29D0760019099C /* ReceiptService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptService.swift; sourceTree = "<group>"; };
+		7ADB7D411F29D2340019099C /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		7ADB7D431F29D2490019099C /* UserDefaults+IAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+IAP.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,13 @@
 		7ADB7D2E1F29D0690019099C /* IAPSubscription */ = {
 			isa = PBXGroup;
 			children = (
+				7ADB7D431F29D2490019099C /* UserDefaults+IAP.swift */,
+				7ADB7D411F29D2340019099C /* AppConfig.swift */,
+				7ADB7D371F29D0760019099C /* PaidSubscription.swift */,
+				7ADB7D381F29D0760019099C /* Session.swift */,
+				7ADB7D391F29D0760019099C /* Subscription.swift */,
+				7ADB7D3A1F29D0760019099C /* SubscriptionService.swift */,
+				7ADB7D3B1F29D0760019099C /* ReceiptService.swift */,
 				7ADB7D2F1F29D0690019099C /* IAPSubscription.h */,
 				7ADB7D301F29D0690019099C /* Info.plist */,
 			);
@@ -95,6 +116,7 @@
 				TargetAttributes = {
 					7ADB7D2B1F29D0690019099C = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADB7D401F29D0760019099C /* ReceiptService.swift in Sources */,
+				7ADB7D3E1F29D0760019099C /* Subscription.swift in Sources */,
+				7ADB7D441F29D2490019099C /* UserDefaults+IAP.swift in Sources */,
+				7ADB7D3D1F29D0760019099C /* Session.swift in Sources */,
+				7ADB7D421F29D2340019099C /* AppConfig.swift in Sources */,
+				7ADB7D3F1F29D0760019099C /* SubscriptionService.swift in Sources */,
+				7ADB7D3C1F29D0760019099C /* PaidSubscription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +270,7 @@
 		7ADB7D351F29D0690019099C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TerraLogic.IAPSubscription;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +290,7 @@
 		7ADB7D361F29D0690019099C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
