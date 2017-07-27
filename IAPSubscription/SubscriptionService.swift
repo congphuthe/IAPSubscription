@@ -58,7 +58,7 @@ func checkInterConnection(controller: UIViewController) -> Bool{
     return true
 }
 
-class SubscriptionService: NSObject {
+open class SubscriptionService: NSObject {
   
   static let sessionIdSetNotification = Notification.Name("SubscriptionServiceSessionIdSetNotification")
   static let optionsLoadedNotification = Notification.Name("SubscriptionServiceOptionsLoadedNotification")
@@ -157,11 +157,11 @@ class SubscriptionService: NSObject {
 // MARK: - SKProductsRequestDelegate
 
 extension SubscriptionService: SKProductsRequestDelegate {
-  func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+  public func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
     options = response.products.map { Subscription(product: $0) }
   }
   
-  func request(_ request: SKRequest, didFailWithError error: Error) {
+  public func request(_ request: SKRequest, didFailWithError error: Error) {
     if request is SKProductsRequest {
       print("Subscription Options Failed Loading: \(error.localizedDescription)")
     }
